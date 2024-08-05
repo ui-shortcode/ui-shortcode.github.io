@@ -20,6 +20,7 @@ new TradingView.widget({
     "BINANCE:BTCUSDT",
     "CRYPTOCAP:BTC.D",
     "BINANCE:ETHUSDT",
+    "BINANCE:ETHBTC",
   ],
   details: true,
   hotlist: true,
