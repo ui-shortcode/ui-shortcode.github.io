@@ -4,8 +4,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
   background-color: var(--color-bg);
+}
+
+h1 {
+  font-weight: 900;
+  margin-bottom: var(--space-sm);
 }
 
 #wrap {
@@ -93,6 +99,7 @@ body {
   min-height: 45px;
   resize: none;
   font-size: var(--text-sm);
+  border: 0;
 }
 
 .result .btn {

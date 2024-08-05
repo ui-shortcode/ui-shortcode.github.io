@@ -150,6 +150,7 @@ h4 {
 h1 {
   font-size: var(--text-2xl);
   letter-spacing: -0.4px;
+  font-weight: 900;
 }
 
 h2 {
@@ -927,4 +928,11 @@ small {
 
 #btn-get-screenshot:hover {
   background-color: var(--color-white);
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="number"] {
+  border: 1px solid var(--color-contrast-low);
 }

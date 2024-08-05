@@ -10,6 +10,11 @@ body {
   background-image: linear-gradient(to bottom right, #207c31, #043a6e);
 }
 
+h1 {
+  font-weight: 900;
+  margin-bottom: var(--space-sm);
+}
+
 #wrap {
   width: 600px;
   margin: 0 auto;

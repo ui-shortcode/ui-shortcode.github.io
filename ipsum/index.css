@@ -1,0 +1,100 @@
+@import "../util.css";
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #266eb3, #21d753);
+  font-size: var(--text-sm);
+}
+
+h1 {
+  font-weight: 900;
+  margin-bottom: var(--space-sm);
+}
+
+#wrap {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.ipsum-setting-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-xs);
+  background-color: var(--color-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.ipsum-setting-box select,
+.ipsum-setting-box input {
+  height: 30px;
+  border-radius: var(--radius-sm);
+  padding: 0 var(--space-2xs) 0 var(--space-3xs);
+}
+
+.output-box {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: var(--space-sm);
+  background-color: var(--color-bg);
+  padding: var(--space-xs);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.output-box #output {
+  margin-bottom: var(--space-sm);
+}
+
+.output-box #output table {
+  border-top: 1px solid var(--color-contrast-high);
+  border-left: 1px solid var(--color-contrast-high);
+}
+
+.output-box #output table th,
+.output-box #output table td {
+  border-bottom: 1px solid var(--color-contrast-high);
+  border-right: 1px solid var(--color-contrast-high);
+  padding: var(--space-xs);
+}
+
+.output-box #output ul {
+  margin: 0 0 0 var(--space-md);
+  padding: 0;
+  list-style: disc;
+}
+
+.output-box #output ol {
+  margin: 0 0 0 var(--space-md);
+  padding: 0;
+  list-style: decimal;
+}
+
+.preview-box {
+  width: 100%;
+}
+
+.preview-box h2 {
+  font-size: var(--text-sm);
+  padding-bottom: var(--space-2xs);
+}
+
+.output-box textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid var(--color-contrast-low);
+  resize: none;
+  padding: var(--space-xs);
+}
+
+.output-box .btn-wrap {
+  align-self: flex-end;
+  padding: var(--space-xs) 0 0;
+  text-align: right;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>한글 Ipsum Generator / Korean Ipsum Generator : ui-shortcode app & utility</title>
+  <meta name="title" content="한글 Ipsum Generator - 한국어 텍스트 더미 생성기">
+  <meta name="description" content="한글 Ipsum Generator를 사용하여 웹디자인 및 문서 작성 시 사용할 수 있는 한국어 더미 텍스트를 손쉽게 생성하세요.">
+  <meta name="keywords" content="한글 Ipsum, 한글 더미 텍스트, 텍스트 생성기, 웹디자인, 한국어 더미 텍스트, 문서 작성">
+  <meta name="author" content="ui-shortcode">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css"
+    integrity="sha512-NzqTHTrO48HsIamogmIaVhTXoSgRF24Cn+ynrNYrFuKrY0AdDbmcNieiOHsQARS/r0Gax9VwV3/rVMHs3ipUlg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./index.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>한글 Ipsum generator</h1>
+  <div id="wrap">
+    <div class="ipsum-setting-box">
+      <div class="field">
+        <label for="length">문구 길이</label>
+        <select id="length">
+          <option value="short">짧게</option>
+          <option value="medium">중간</option>
+          <option value="long">길게</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="count">개수</label>
+        <input type="number" id="count" min="1" max="50" value="1">
+      </div>
+      <div class="field">
+        <label for="element">HTML 요소</label>
+        <select id="element">
+          <option value="p">문단 (p)</option>
+          <option value="table">표 (table)</option>
+          <option value="ul">목록 (ul)</option>
+          <option value="ol">순서목록 (ol)</option>
+        </select>
+      </div>
+      <button class="btn btn-primary btn-size-sm" onclick="generateText()">문구 생성</button>
+    </div>
+
+    <!-- output -->
+    <div class="output-box">
+      <div class="preview-box">
+        <h2>Preview</h2>
+        <div id="output">미리보기를 위한 설정 후 "문구생성" 버튼을 클릭해주세요.</div>
+      </div>
+      <div class="preview-box">
+        <h2>HTML Preview</h2>
+        <textarea id="codeOutput" readonly></textarea>
+      </div>
+      <div class="btn-wrap">
+        <button class="btn btn-secondary btn-size-sm btn-outlined" onclick="copyCode()">Copy to clipboard</button>
+      </div>
+    </div>
+    <!-- output -->
+  </div>
+
+
+  <!-- back to list -->
+  <button type="button" id="btn-back-to-list">
+    <i class="ri-arrow-left-line"></i>
+    <span class="btn-label">back to list</span>
+  </button>
+  <!-- // back to list -->
+
+  <!-- script -->
+  <script src="./index.js"></script>
+  <script src="../ui.js"></script>
+  <!-- // script -->
+  <script>
+
+  </script>
+</body>
+
+</html>
