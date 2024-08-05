@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gradient generator</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css"
+    integrity="sha512-NzqTHTrO48HsIamogmIaVhTXoSgRF24Cn+ynrNYrFuKrY0AdDbmcNieiOHsQARS/r0Gax9VwV3/rVMHs3ipUlg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./index.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="utility-box">
+      <!-- field-wrapper -->
+      <div class="field-wrapper">
+        <div class="field">
+          <label for="color-1">color 1</label>
+          <input type="color" id="color-1" class="input-color" />
+          <span id="color-1-value">#000000</span>
+        </div>
+        <div class="field">
+          <label for="color-2">color 2</label>
+          <input type="color" id="color-2" class="input-color" />
+          <span id="color-2-value">#000000</span>
+        </div>
+      </div>
+      <!-- // field-wrapper -->
+
+      <!-- direction-btn-wrap -->
+      <div class="direction-btn-wrap">
+        <button type="button" class="is-active btn btn-secondary btn-icon-only btn-outlined direction"
+          aria-label="Left to Right" data-direction="to right">
+          <i class="ri-arrow-right-line"></i>
+        </button>
+        <button type="button" class="btn btn-secondary btn-icon-only btn-outlined direction" aria-label="Right to Left"
+          data-direction="to left">
+          <i class="ri-arrow-left-line"></i>
+        </button>
+        <button type="button" class="btn btn-secondary btn-icon-only btn-outlined direction" aria-label="Top to Bottom"
+          data-direction="to bottom">
+          <i class="ri-arrow-down-line"></i>
+        </button>
+        <button type="button" class="btn btn-secondary btn-icon-only btn-outlined direction" aria-label="Bottom to Top"
+          data-direction="to top">
+          <i class="ri-arrow-up-line"></i>
+        </button>
+        <button type="button" class="btn btn-secondary btn-icon-only btn-outlined direction"
+          aria-label="Top Left to Bottom Right" data-direction="to bottom right">
+          <i class="ri-arrow-right-down-line"></i>
+        </button>
+        <button type="button" class="btn btn-secondary btn-icon-only btn-outlined direction"
+          aria-label="Top Right to Bottom Left" data-direction="to bottom left">
+          <i class="ri-arrow-left-down-line"></i>
+        </button>
+        <button type="button" class="btn btn-secondary btn-icon-only btn-outlined direction"
+          aria-label="Bottom Left to Top Right" data-direction="to top right">
+          <i class="ri-arrow-right-up-line"></i>
+        </button>
+        <button type="button" class="btn btn-secondary btn-icon-only btn-outlined direction"
+          aria-label="Bottom Right to Top Left" data-direction="to top left">
+          <i class="ri-arrow-left-up-line"></i>
+        </button>
+      </div>
+      <!-- // direction-btn-wrap -->
+
+      <!-- btn-wrap -->
+      <div class="btn-wrap">
+        <button type="button" class="btn btn-primary btn-size-md btn-full-width" id="btn-generate">
+          <span class="btn-label">Generate</span>
+        </button>
+      </div>
+      <!-- // btn-wrap -->
+
+      <!-- result -->
+      <div class="result">
+        <textarea id="code" readonly></textarea>
+        <button type="button" class="btn btn-primary btn-size-sm" id="btn-copy-code">
+          <span class="btn-label">Copy</span>
+        </button>
+      </div>
+      <!-- // result -->
+    </div>
+  </div>
+
+  <!-- back to list -->
+  <button type="button" id="btn-back-to-list">
+    <i class="ri-arrow-left-line"></i>
+    <span class="btn-label">back to list</span>
+  </button>
+  <!-- // back to list -->
+
+  <!-- script -->
+  <script src="./index.js"></script>
+  <script src="../ui.js"></script>
+  <!-- // script -->
+</body>
+
+</html>
