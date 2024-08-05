@@ -1,8 +1,9 @@
-new TradingView.widget({
+// widget 변수를 선언하여 반환된 위젯 객체를 저장
+var widget = new TradingView.widget({
   autosize: true,
   symbol: "BINANCE:BTCUSDT",
   interval: "D",
-  timezzone: "Etc/Utc",
+  timezone: "Etc/Utc",
   theme: "dark",
   style: "1",
   locale: "kr",
@@ -14,9 +15,6 @@ new TradingView.widget({
   watchlist: [
     "FOREXCOM:SPX500",
     "FOREXCOM:NAS100",
-    // "NASDAQ:AAPL",
-    // "NASDAQ:NVDA",
-    // "NASDAQ:TSLA",
     "BINANCE:BTCUSDT",
     "CRYPTOCAP:BTC.D",
     "BINANCE:ETHUSDT",
@@ -30,4 +28,12 @@ new TradingView.widget({
   show_popup_button: true,
   popup_width: "1000",
   popup_height: "650",
+  studies_overrides: {
+    "relative strength index.rsi.color": "#2196f3",
+    "relative strength index.upper band.color": "#2100f5",
+    "relative strength index.lower band.color": "#2100f5",
+    "relative strength index.upper band.value": 80,
+    "relative strength index.lower band.value": 20,
+  },
+  studies: ["RSI@tv-basicstudies"],
 });
