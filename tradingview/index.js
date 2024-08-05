@@ -1,7 +1,7 @@
 // widget 변수를 선언하여 반환된 위젯 객체를 저장
 var widget = new TradingView.widget({
   autosize: true,
-  symbol: "BINANCE:BTCUSDT",
+  symbol: "FOREXCOM:SPX500",
   interval: "D",
   timezone: "Etc/Utc",
   theme: "dark",
@@ -19,6 +19,8 @@ var widget = new TradingView.widget({
     "CRYPTOCAP:BTC.D",
     "BINANCE:ETHUSDT",
     "BINANCE:ETHBTC",
+    "FX_IDC:USDKRW",
+    "FX_IDC:JPYKRW",
   ],
   details: true,
   hotlist: true,
@@ -32,8 +34,8 @@ var widget = new TradingView.widget({
     "relative strength index.rsi.color": "#2196f3",
     "relative strength index.upper band.color": "#2100f5",
     "relative strength index.lower band.color": "#2100f5",
-    "relative strength index.upper band.value": 80,
-    "relative strength index.lower band.value": 20,
+    "relative strength index.upper band.value": 70,
+    "relative strength index.lower band.value": 30,
   },
   studies: ["RSI@tv-basicstudies"],
 });
